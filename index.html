@@ -14,7 +14,7 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#">главная</a></li>
+          <li><a href="index.html" class="active">главная</a></li>
           <li><a href="#">посмотреть лоты</a></li>
           <li><a href="#">об аукционе</a></li>
         </ul>
@@ -24,18 +24,23 @@
         <img src="images/logo-black.svg" alt="Оно тебе надо" />
       </a>
 
-      <address>
-        <p><a href="tel:+99995555555">+9 999 555 5555</a></p>
-        <p><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
-        <p>наб. Принсенграхт 263- <br />265, Амстердам</p>
+      <address class="contacts header__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a><br />
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        наб. Принсенграхт 263-<br/>265, Амстердам
       </address>
     </header>
 
     <main>
       <section class="cover">
-        <h1>ОНО</h1>
-        <h1>ТЕБЕ</h1>
-        <h1>НАДО</h1>
+        <div class="overlay overlay--dark" aria-hidden="true"></div>
+
+        <h1 id="cover-title" class="cover__title">
+          <span class="cover__word cover__word--start">оно</span>
+          <span class="cover__word cover__word--center">тебе</span>
+          <span class="cover__word cover__word--end">надо</span>
+        </h1>
+
         <div class="description">
           <p>Аукцион вещей, в которые никто не верил</p>
           <button type="button">Сделать ставку</button>
@@ -47,7 +52,8 @@
         <ul class="lots__list">
           <li class="lots__item">
             <a href="#" class="lots__link">
-              <article class="lots__card">
+              <article class="lots__card lots__card_type_film">
+                <div class="overlay overlay--dark" aria-hidden="true"></div>
                 <h3 class="lots__card-title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -61,7 +67,8 @@
           </li>
           <li class="lots__item">
             <a href="#" class="lots__link">
-              <article class="lots__card">
+              <article class="lots__card lots__card_type_book">
+                <div class="overlay overlay--dark" aria-hidden="true"></div>
                 <h3 class="lots__card-title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -78,7 +85,8 @@
           </li>
           <li class="lots__item">
             <a href="#" class="lots__link">
-              <article class="lots__card">
+              <article class="lots__card lots__card_type_picture">
+                <div class="overlay overlay--dark" aria-hidden="true"></div>
                 <h3 class="lots__card-title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -127,7 +135,7 @@
     </main>
 
     <footer class="footer">
-      <address class="footer__address">
+      <address class="contacts footer__address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
         наб. Принсенграхт 263-265,<br />
@@ -136,9 +144,9 @@
 
       <nav class="footer__menu">
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Посмотреть лоты</a></li>
-          <li><a href="#">Об аукционе</a></li>
+          <li><a href="#" class="active">главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
         </ul>
       </nav>
 
