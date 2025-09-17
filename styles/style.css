@@ -20,7 +20,7 @@ header {
   list-style: circle;
 }
 
-.nav__item--first {
+.nav__item--nodecoration {
   list-style: none;
   margin-left: 0;
 }
@@ -67,7 +67,7 @@ header {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -193,11 +193,6 @@ header {
   font-family: "Raleway", sans-serif;
 }
 
-.lots__card .overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
 
 .lots__card-title {
   margin: 0;
@@ -206,12 +201,14 @@ header {
   line-height: 1.1;
   text-transform: uppercase;
   text-decoration: underline;
+  z-index: 3;
 }
 
 .lots__card-text {
   margin: 0;
   font-weight: 400;
   font-size: 20px;
+  z-index: 3;
 }
 
 .lots__card_type_film {
@@ -310,6 +307,7 @@ header {
 .footer__menu {
   justify-self: center;
 }
+
 .footer__menu ul {
   list-style: none;
   margin: 0;
@@ -318,10 +316,16 @@ header {
   gap: 6px;
   text-align: center;
 }
+
 .footer__menu a {
   color: #000;
   text-decoration: underline;
 }
+
+.footer__menu a.active {
+  text-decoration: none;
+}
+
 
 .footer__social {
   justify-self: end;
